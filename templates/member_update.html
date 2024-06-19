@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Member</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>更新会员信息</h3>
+    <form id="updateMemberForm" action="/manage/member/update" method="POST" class="form">
+        <div class="form-group">
+            <label for="memberID">会员卡号:</label>
+            <input type="text" id="memberID" name="MemberID" required>
+        </div>
+        <div class="form-group">
+            <label for="birth">出生日期:</label>
+            <input type="date" id="birth" name="Birth" required>
+        </div>
+        <div class="form-group">
+            <label for="sex">性别:</label>
+            <select id="sex" name="Sex" required>
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="phone">联系方式:</label>
+            <input type="text" id="phone" name="Phone" required>
+        </div>
+        <div class="form-group">
+            <label for="registerDate">办卡日期:</label>
+            <input type="date" id="registerDate" name="RegisterDate" required>
+        </div>
+        <div class="form-group">
+            <label for="height">身高:</label>
+            <input type="number" id="height" name="Height" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="weight">体重:</label>
+            <input type="number" id="weight" name="Weight" step="0.01" required>
+        </div>
+        <div class="form-actions">
+            <button type="submit">更新会员信息</button>
+        </div>
+    </form>
+</body>
+</html>

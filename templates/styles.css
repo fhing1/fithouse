@@ -1,0 +1,147 @@
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('/static/images/manage.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .header {
+            background-color: rgba(52, 152, 219, 0.8);
+            color: white;
+            padding: 5px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            position: relative;
+        }
+        .menu {
+            float: left;
+            width: 12%;
+            padding: 15px;
+            background: rgba(236, 240, 241, 0.8);
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            backdrop-filter: blur(5px);
+        }
+        input, button {
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        .menu a {
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .menu a:hover {
+            background-color: rgba(189, 195, 199, 0.8);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .main {
+            margin-left: 12%;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+            min-height: 100vh;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+            backdrop-filter: blur(2px);
+            position: relative;
+        }
+        .footer {
+            clear: both;
+            background-color: rgba(52, 152, 219, 0.8);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            backdrop-filter: blur(5px);
+        }
+        .content-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        h2 {
+            text-align:center;
+            margin: 0;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .manage-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #d1ecf1;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+    </style>

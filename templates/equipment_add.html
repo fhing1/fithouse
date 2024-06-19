@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>新增器材</title>
+</head>
+<body>
+<h3>新增器材</h3>
+<form id="addEquipmentForm" action="/manage/equipment/add" method="post" class="form">
+    <div class="form-group">
+    <label for="EquipmentName">器材名称:</label>
+    <input type="text" id="EquipmentName" name="EquipmentName" required>
+</div>
+<div class="form-group">
+    <label for="TrainingLocation">器材地点:</label>
+    <input type="text" id="TrainingLocation" name="TrainingLocation" required>
+</div>
+<div class="form-actions">
+    <button type="submit">添加器材</button>
+</div>
+</form>
+</body>
+</html>

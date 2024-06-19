@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Worker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>删除工作人员</h3>
+    <form id="deleteWorkerForm" action="/manage/worker/delete" method="POST" class="form">
+        <div class="form-group">
+            <label for="workerName">姓名:</label>
+            <input type="text" id="workerName" name="workerName" required>
+        </div>
+        <div class="form-group">
+            <label for="workerTime">入职时间:</label>
+            <input type="date" id="workerTime" name="workerTime" required>
+        </div>
+        <div class="form-actions">
+            <button type="submit">删除工作人员</button>
+        </div>
+    </form>
+</body>
+</html>

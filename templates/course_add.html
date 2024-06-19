@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>新增课程</title>
+</head>
+<body>
+<h3>新增课程</h3>
+<form id="addCourseForm" action="/manage/course/add" method="post" class="form">
+    <div class="form-group">
+    <label for="CourseID">课程编号:</label>
+    <input type="text" id="CourseID" name="CourseID" required>
+</div>
+<div class="form-group">
+    <label for="CourseName">课程名称:</label>
+    <input type="text" id="CourseName" name="CourseName" required>
+</div>
+<div class="form-group">
+    <label for="TrainingLocation">训练地点:</label>
+    <input type="text" id="TrainingLocation" name="TrainingLocation" required>
+</div>
+<div class="form-group">
+    <label for="CourseTime">课程时间:</label>
+    <input type="text" id="CourseTime" name="CourseTime" required>
+</div>
+<div class="form-group">
+    <label for="CourseCoach">教练姓名:</label>
+    <input type="text" id="CourseCoach" name="CourseCoach" required>
+</div>
+<div class="form-actions">
+    <button type="submit">添加课程</button>
+</div>
+</form>
+</body>
+</html>

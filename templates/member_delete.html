@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Member</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>删除会员</h3>
+    <form id="deleteMemberForm" action="/manage/member/delete" method="POST" class="form">
+        <div class="form-group">
+            <label for="memberID">会员卡号:</label>
+            <input type="text" id="memberID" name="memberID" required>
+        </div>
+        <div class="form-group">
+            <label for="registerDate">办卡日期:</label>
+            <input type="date" id="registerDate" name="registerDate" required>
+        </div>
+        <div class="form-actions">
+            <button type="submit">删除会员</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>更改课程信息</h3>
+    <form id="updateEquipment" action="/manage/equipment/update" method="POST" class="form">
+        <div class="form-group">
+        <label for="EquipmentID">器材编号:</label>
+        <input type="text" id="EquipmentID" name="EquipmentID" required>
+    </div>
+    <div class="form-group">
+        <label for="EquipmentName">器材名称:</label>
+        <input type="text" id="EquipmentName" name="EquipmentName" required>
+    </div>
+    <div class="form-group">
+        <label for="TrainingLocation">器材地点:</label>
+        <input type="text" id="TrainingLocation" name="TrainingLocation" required>
+    </div>
+    <div class="form-actions">
+        <button type="submit">更新器材信息</button>
+    </div>
+    </form>
+</body>
+</html>

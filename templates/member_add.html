@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>新增工作人员</title>
+</head>
+<body>
+<h3>添加工作人员</h3>
+<form id="addWorkerForm" class="form">
+    <div class="form-group">
+        <label for="workerName">姓名:</label>
+        <input type="text" id="workerName" name="WorkName" required>
+    </div>
+    <div class="form-group">
+        <label for="workerBirth">生日:</label>
+        <input type="date" id="workerBirth" name="Birth" required>
+    </div>
+    <div class="form-group">
+        <label for="workerSex">性别:</label>
+        <select id="workerSex" name="Sex" required>
+            <option value="男">男</option>
+            <option value="女">女</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="workerPhone">手机号:</label>
+        <input type="text" id="workerPhone" name="Phone" required>
+    </div>
+    <div class="form-group">
+        <label for="workerJob">职位:</label>
+        <input type="text" id="workerJob" name="Job" required>
+    </div>
+    <div class="form-group">
+        <label for="workerWorkTime">入职时间:</label>
+        <input type="date" id="workerWorkTime" name="WorkTime" required>
+    </div>
+    <div class="form-actions">
+        <button type="submit">添加工作人员</button>
+    </div>
+</form>
+</body>
+</html>
